@@ -21,6 +21,7 @@ class Header extends React.Component {
           </a>
           <ul className="dropdown-menu">
             <li><Link to="/account">My Account</Link></li>
+            <li><Link to="/todo">Todo</Link></li>
             <li className="divider"></li>
             <li><a href="#" onClick={this.handleLogout.bind(this)}>Logout</a></li>
           </ul>
@@ -48,6 +49,7 @@ class Header extends React.Component {
             <ul className="nav navbar-nav">
               <li><IndexLink to="/" activeStyle={active}>Home</IndexLink></li>
               <li><Link to="/contact" activeStyle={active}>Contact</Link></li>
+              <li><Link to="/todo" activeStyle={active}>Todoo</Link></li>
             </ul>
             {rightNav}
           </div>
